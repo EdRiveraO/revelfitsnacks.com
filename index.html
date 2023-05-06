@@ -8,79 +8,49 @@
 	<link rel="icon" href="./img/logo.png">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<script src="slider.js"></script>
+	<script src="sliderproducto.js"></script>
 	<script src="headerscroll.js"></script>
 	<script src="menu.js"></script>
 </head>
-<body>
+<body >
+
 	<header>
 		<div class="logo">
 		  <img src="./img/logo.png" alt="Logo de Revelfit Snacks" width="60">
 		</div>
-		<nav>
-		  <ul class="nav-links">
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Nosotros</a></li>
-			<li><a href="#">Productos</a></li>
-			<li><a href="#">Contacto</a></li>
-		  </ul>
-		</nav>
 	  </header>
 	  <div class="slider">
 		<img src="/img/banner1.png" alt="Imagen 1" class="active">
 		<img src="./img/banner2.png" alt="Imagen 2">
+		<div class="banner-text">
+			<h3>Demasiado rico </h3>
+			<h4>Demasiado revel </h4>
+		  </div>
 	  </div>
-	<div class="image-center">
-		<img src="./img/productos.png" alt="Imagen central">
+	  <div class="image-center-with-text">
+		<div class="image-center">
+			<img src="./img/nuestrosproductos.png" alt="Imagen central">
+		</div>
+		<div class="products-text">
+			<h2>Nuestros</h2>
+			<h1>productos</h1>
+		</div>
+	  	<div class="circulo"></div>
 	</div>
 	<main>
-		<section class="products">
-		  <h2>Nuestros productos</h2>
-		  <div class="product-item">
-			<div class="product-image">
-			  <img src="./img/producto.png" alt="Producto 1">
-			</div>
-			<div class="product-info">
-			  <h3>Yogur griego</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p class="price">$5.99</p>
-			  <button class="order-btn">Ordenar</button>
-			</div>
+		<div class="slider-container">
+			<article class="slider-product">
+			  <img src="./img/fresa.png" alt="Nombre del producto">
+			  <div class="product-description">
+				<h3>Nombre del producto</h3>
+				<p>Descripción del producto</p>
+			  </div>
+			</article>
 		  </div>
-		  <div class="product-item">
-			<div class="product-image">
-			  <img src="./img/producto.png" alt="Producto 2">
-			</div>
-			<div class="product-info">
-			  <h3>Granola</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p class="price">$6.99</p>
-			  <button class="order-btn">Ordenar</button>
-			</div>
-		  </div>
-		  <div class="product-item">
-			<div class="product-image">
-			  <img src="./img/producto.png" alt="Producto 3">
-			</div>
-			<div class="product-info">
-			  <h3>Producto 3</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p class="price">$7.99</p>
-			  <button class="order-btn">Ordenar</button>
-			</div>
-		  </div>
-		  <div class="product-item">
-			<div class="product-image">
-			  <img src="./img/producto.png" alt="Producto 4">
-			</div>
-			<div class="product-info">
-			  <h3>Producto 4</h3>
-			  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-			  <p class="price">$8.99</p>
-			  <button class="order-btn">Ordenar</button>
-			</div>
-		  </div>
-		</section>
+
+		</div>
 	  </main>
 
 	<footer>
