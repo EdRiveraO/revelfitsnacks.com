@@ -58,28 +58,29 @@ header {
 	color: #CC9AC5;
   }
 
-  
 
-/* Estilos del slider */
+/* Estilos para el slider */
 .slider {
-	max-width: 100%;
+	position: relative;
+	width: 100%;
 	height: 400px;
 	overflow: hidden;
-	position: relative;
-	margin-top: 20px;
-}
-.slider img {
+  }
+  
+  .slider img {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
-	max-width: 100%;
-	height: auto;
-}
-.slider img:first-child {
+  }
+  
+  .slider img.active {
 	opacity: 1;
-}
+  }
 @media screen and (max-width: 768px) {
 	.slider {
 		height: 200px;
