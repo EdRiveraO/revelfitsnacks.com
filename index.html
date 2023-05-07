@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Marca de snacks fit">
 	<title>Revelfit Snacks</title>
-	<link rel="icon" href="./img/logo.png">
+	<link rel="icon" href="./img/rpestanha.png">
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<script src="slider.js"></script>
-	<script src="sliderproducto.js"></script>
 	<script src="headerscroll.js"></script>
 	<script src="menu.js"></script>
 </head>
-<body >
+
+<body>
 
 	<header>
 		<div class="logo">
-		  <img src="./img/logo.png" alt="Logo de Revelfit Snacks" width="60">
+			<img src="./img/logo.png" alt="Logo de Revelfit Snacks" width="60">
 		</div>
-	  </header>
-	  <div class="slider">
+	</header>
+	<div class="slider">
 		<img src="/img/banner1.png" alt="Imagen 1" class="active">
 		<img src="./img/banner2.png" alt="Imagen 2">
 		<div class="banner-text">
 			<h3>Demasiado rico </h3>
 			<h4>Demasiado revel </h4>
-		  </div>
-	  </div>
-	  <div class="image-center-with-text">
+		</div>
+	</div>
+	<div class="image-center-with-text">
 		<div class="image-center">
 			<img src="./img/nuestrosproductos.png" alt="Imagen central">
 		</div>
@@ -37,25 +38,86 @@
 			<h2>Nuestros</h2>
 			<h1>productos</h1>
 		</div>
-	  	<div class="circulo"></div>
+		<div class="circulo"></div>
 	</div>
 	<main>
-		<div class="slider-container">
-			<article class="slider-product">
-			  <img src="./img/fresa.png" alt="Nombre del producto">
-			  <div class="product-description">
-				<h3>Nombre del producto</h3>
-				<p>Descripción del producto</p>
-			  </div>
-			</article>
-		  </div>
+		<!-- Swiper -->
+		<div class="container">
+			
+			<div class="swiper-container mySwiper">
 
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="img/yogurproducto1.png" alt="">
+						<div class="card-description">
+							<div class="card-title">
+								<h1 class="titulo-1">Yogur</h1>
+								<h1 class="titulo-2">Griego</h1>
+								<h1 class="cantidad">1000g</h1>
+							</div>
+							<div class="card-text">
+								<p>yogur griego 100% natural altro en proteìna</p>
+							</div>
+							<div class="card-precio">
+								<h2>$32.000</h2>
+							</div>
+							<div class="btn-ordenar">
+								<button>Ordenar</button>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<img src="img/yogurproducto1.png" alt="">
+						<div class="card-description">
+							<div class="card-title">
+								<h1 class="titulo-1">Yogur</h1>
+								<h1 class="titulo-2">Griego</h1>
+								<h1 class="cantidad">1000g</h1>
+							</div>
+							<div class="card-text">
+								<p>yogur griego 100% natural altro en proteìna</p>
+							</div>
+							<div class="card-precio">
+								<h2>$32.000</h2>
+							</div>
+							<div class="btn-ordenar">
+								<button>Ordenar</button>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-slide">
+						<img src="img/yogurproducto1.png" alt="">
+						<div class="card-description">
+							<div class="card-title">
+								<h1 class="titulo-1">Yogur</h1>
+								<h1 class="titulo-2">Griego</h1>
+								<h1 class="cantidad">1000g</h1>
+							</div>
+							<div class="card-text">
+								<p>yogur griego 100% natural altro en proteìna</p>
+							</div>
+							<div class="card-precio">
+								<h2>$32.000</h2>
+							</div>
+							<div class="btn-ordenar">
+								<button>Ordenar</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
 		</div>
-	  </main>
+		</div>
+	</main>
 
 	<footer>
 		<p>Derechos reservados © Mi marca de snacks fit</p>
 	</footer>
-
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="app.js"></script>
 </body>
+
 </html>

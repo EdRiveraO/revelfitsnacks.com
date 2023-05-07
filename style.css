@@ -20,7 +20,8 @@ img {
 }
 
 .image-center-with-text {
-	
+	margin-top: 40px;
+	margin-bottom: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,6 +32,10 @@ img {
 	margin-right: 20px;
 	text-align: right;
   }
+  .image-center img{
+	width: 120px;
+  }
+  
   .products-text {
 	flex: 1;
   }
@@ -129,63 +134,94 @@ header {
 	font-family: 'Montserrat Black', sans-serif;
 	font-size: 50px;
 }
-/* Estilos para el contenedor del slider */
-.slider-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-  }
+
+/*-------------------------------------------------+*/
+.container{
+	width: 90%;
   
-  /* Estilos para los productos del slider */
-  .slider-product {
+	padding: 10px 40px;
+  }
+  .container .swiper-container{
+	width: 100%;
+	height: 100%;
+  }
+  .container .swiper-slide {
+	position: relative;
+	text-align: center;
+	background: #ffffff1e;
+	border-radius: 15px;
+	text-align: start;
+	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+	max-width: 500px !important; /* Cambiar a max-width en lugar de width */
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	max-width: 800px;
-	margin: 0 auto;
+	transition: all 0.3s ease;
+
   }
-  
-  .slider-product img {
-	width: 50%;
+  .container .swiper-slide:hover {
+	background: #ffffffbe;
   }
+  .container .swiper-slide img{
+	margin-top: 10%;
+	display: block;
+	width: 40%; /* ajusta el ancho de la imagen según tus necesidades */
+	height: 180px;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
   
-  .product-description {
-	width: 50%;
-	margin-left: 20px;
   }
-  
-  .product-description h3 {
-	font-size: 24px;
-	margin-bottom: 10px;
+  .container .swiper-slide .card-description{
+	padding: 1rem;
+	width: 60%; /* ajusta el ancho del contenedor de descripción según tus necesidades */
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
   }
-  
-  .product-description p {
-	font-size: 16px;
+  .container .swiper-slide .card-title,.container .swiper-slide .card-text{
+	 margin-bottom: .5rem;
   }
-  
-  /* Botones de control del slider */
-  .swiper-button-next, .swiper-button-prev {
-	color: white;
-	font-size: 25px;
-	background-color: black;
-	padding: 10px 20px;
-	border-radius: 5px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
+  .container .swiper-slide .btn-ordenar{
+	 text-align: start;
   }
-  
-  .swiper-button-next {
-	right: 10px;
+  .card-text{
+	height: 60px;
   }
-  
-  .swiper-button-prev {
-	left: 10px;
+  .container .swiper-slide .btn-ordenar button{
+	 width: 40%;
+	 height: 30px;
+	 background-color: #CC9AC5;
+	 color: #fff;
+	 border: none;
+	 font-size: 15px;
+	 font-family: 'Montserrat Light', sans-serif;
+	 transition: all 0.3s ease;
+
   }
 
-
+  .container .swiper-slide .btn-ordenar button:hover{
+	cursor: pointer;
+	background-color: #1D2137;
+ }
+  .titulo-1 {
+	font-family: 'Montserrat Light', sans-serif;
+  }
+  .titulo-2 {
+	font-family: 'Montserrat Black', sans-serif;
+	font-size: 30px;
+	margin-top: -14px;
+  }
+  .cantidad {
+	font-family: 'Montserrat Light', sans-serif;
+	font-size: 20px;
+  }
+  .swiper-button-next{
+	  right: 26px !important;
+  }
+  .swiper-button-prev{
+	  left: 26px !important;
+  }
+/*-------------------------------------------------+*/
 
 @media screen and (max-width: 768px) {
 	.slider {
