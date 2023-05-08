@@ -13,7 +13,48 @@ body {
 	background-color:#ffecfc
 }
 
+.whatsapp-btn {
+	transition: all 0.3s ease-in-out;
 
+	z-index: 9999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: #25d366;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  .tooltip {
+	z-index: 9999;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	transform: translateY(-50%);
+	background-color: #000;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 16px;
+	white-space: nowrap;
+	opacity: 0;
+	transition: all 0.3s ease;
+  }
+  
+  .whatsapp-btn:hover {
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	background-color: #25d366;
+}
+
+.whatsapp-btn:hover ~ .tooltip {
+	left: calc(100% + 10px);
+	opacity: 1;
+}
 img {
 	max-width: 100%;
 	height: auto;
@@ -40,7 +81,11 @@ img {
 	flex: 1;
   }
   .products-text h1{
+	margin-top: -15px;
 	font-family: 'Montserrat Black', sans-serif;
+  }
+  .products-text h2{
+	font-weight: 80;
   }
   .circulo {
     position: absolute;
@@ -91,6 +136,7 @@ header {
   
 
 /* Estilos para el slider */
+
 .slider {
 	position: relative;
 	width: 100%;
@@ -125,24 +171,41 @@ header {
   }
 
   .banner-text h3{
-	font-family: 'Montserrat Light', sans-serif;
+	font-family: 'Montserrat thin', sans-serif;
 	font-size: 40px;
+	font-weight: 100;
+
 	margin-bottom: 0px;
 }
 .banner-text h4{
-	margin-top: 0px;
+	margin-top: -20px;
 	font-family: 'Montserrat Black', sans-serif;
 	font-size: 50px;
 }
 
 /*-------------------------------------------------+*/
+.btnnext-cont{
+	width: 10%;
+}
+.btn-next {
+	width: 100px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #CC9AC5;
+	color: #fff;
+	font-size: 24px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	z-index: 999; /* Coloca el botón encima de otros elementos */
+  }
 .container{
-	width: 90%;
-  
+	width: 100%;
+	position: relative;
 	padding: 10px 40px;
   }
   .container .swiper-container{
-	width: 100%;
+	width: 80%;
 	height: 100%;
   }
   .container .swiper-slide {
